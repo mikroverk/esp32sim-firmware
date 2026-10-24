@@ -6,7 +6,10 @@ Each was built by Xorlev from the example directory named below, under `examples
 whose README gives the exact recipe. `SHA256SUMS` lists every file; the fetch script pins the same
 hashes.
 
-All P4 images are built for silicon rev < 3 (`CONFIG_ESP32P4_SELECTS_REV_LESS_V3=y`). The
+The `p4-hello-rev3*` images were built by Joakim Eriksson with ESP-IDF v5.5.4 for silicon rev ≥ 3
+(IDF's default, minimum v3.1), from `examples/hello_world-p4` with `sdkconfig.defaults.rev3`
+(single-core) and `sdkconfig.defaults.rev3-smp` (both cores); they use hello_world's partition
+table. Every other P4 image is built for silicon rev < 3 (`CONFIG_ESP32P4_SELECTS_REV_LESS_V3=y`). The
 `p4-hello-smp`, `p4-sdcard` and `p4-sdsectors` apps use hello_world's partition table, which is
 committed in esp32sim as `web/wasm/fw/public/p4-hello-ptable.bin` (the same bytes).
 
@@ -19,6 +22,10 @@ their texts.
 | --- | ---: | --- | --- | --- |
 | `p4-hello-smp-bootloader.bin` | 22976 | `examples/hello_world-p4` | ESP-IDF v5.5.3 get-started/hello_world, both cores (sdkconfig.defaults.smp), rev < 3 | Unlicense OR CC0-1.0 |
 | `p4-hello-smp_world.bin` | 168496 | `examples/hello_world-p4` | ESP-IDF v5.5.3 get-started/hello_world, both cores (sdkconfig.defaults.smp), rev < 3 | Unlicense OR CC0-1.0 |
+| `p4-hello-rev3-bootloader.bin` | 23072 | `examples/hello_world-p4` | ESP-IDF v5.5.4 get-started/hello_world, one core (sdkconfig.defaults.rev3), rev ≥ 3 | Unlicense OR CC0-1.0 |
+| `p4-hello-rev3_world.bin` | 160320 | `examples/hello_world-p4` | ESP-IDF v5.5.4 get-started/hello_world, one core (sdkconfig.defaults.rev3), rev ≥ 3 | Unlicense OR CC0-1.0 |
+| `p4-hello-rev3-smp-bootloader.bin` | 23072 | `examples/hello_world-p4` | ESP-IDF v5.5.4 get-started/hello_world, both cores (sdkconfig.defaults.rev3-smp), rev ≥ 3 | Unlicense OR CC0-1.0 |
+| `p4-hello-rev3-smp_world.bin` | 169920 | `examples/hello_world-p4` | ESP-IDF v5.5.4 get-started/hello_world, both cores (sdkconfig.defaults.rev3-smp), rev ≥ 3 | Unlicense OR CC0-1.0 |
 | `p4-sdcard-bootloader.bin` | 22976 | `examples/sd_card-p4` | ESP-IDF v5.5.3 storage/sd_card/sdmmc, rev < 3 | Unlicense OR CC0-1.0 |
 | `p4-sdcard.bin` | 300112 | `examples/sd_card-p4` | ESP-IDF v5.5.3 storage/sd_card/sdmmc, rev < 3 | Unlicense OR CC0-1.0 |
 | `p4-sdsectors-bootloader.bin` | 22976 | `examples/sd_card-p4-sectors` | sd_card-p4 plus the long sector transfer block, rev < 3 | Unlicense OR CC0-1.0 |
