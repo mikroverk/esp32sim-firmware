@@ -6,7 +6,7 @@ Each was built by Xorlev from the example directory named below, under `examples
 whose README gives the exact recipe. `SHA256SUMS` lists every file; the fetch script pins the same
 hashes.
 
-The `p4-hello-rev3*` images were built by Joakim Eriksson with ESP-IDF v5.5.4 for silicon rev ≥ 3
+The `p4-hello-rev3*` and `p4-hosted-rev3*` images were built by Joakim Eriksson with ESP-IDF v5.5.4 for silicon rev ≥ 3
 (IDF's default, minimum v3.1), from `examples/hello_world-p4` with `sdkconfig.defaults.rev3`
 (single-core) and `sdkconfig.defaults.rev3-smp` (both cores); they use hello_world's partition
 table. Every other P4 image is built for silicon rev < 3 (`CONFIG_ESP32P4_SELECTS_REV_LESS_V3=y`). The
@@ -38,6 +38,8 @@ their texts.
 | `c6-hosted-otadata.bin` | 8192 | `examples/esp-hosted-p4` | esp_hosted 2.12.13 slave example for the ESP32-C6 | see hosted-NOTICE.txt |
 | `c6-hosted-slave.bin` | 1208832 | `examples/esp-hosted-p4` | esp_hosted 2.12.13 slave example for the ESP32-C6 | see hosted-NOTICE.txt |
 | `c6-hosted-rawtp-slave.bin` | 1211904 | `examples/esp-hosted-p4` | esp_hosted 2.12.13 slave example for the ESP32-C6, raw throughput test on | see hosted-NOTICE.txt |
+| `p4-hosted-rev3-bootloader.bin` | 23072 | `examples/esp-hosted-p4` | ESP-IDF v5.5.4 wifi/getting_started/station with esp_hosted 2.12.13, rev ≥ 3 (`sdkconfig.defaults.rev3`); its partition table is the bytes of `p4-hosted-ptable.bin` | see hosted-NOTICE.txt |
+| `p4-hosted-rev3-station.bin` | 657760 | `examples/esp-hosted-p4` | ESP-IDF v5.5.4 wifi/getting_started/station with esp_hosted 2.12.13, rev ≥ 3 (`sdkconfig.defaults.rev3`); its partition table is the bytes of `p4-hosted-ptable.bin` | see hosted-NOTICE.txt |
 | `p4-hosted-bootloader.bin` | 22976 | `examples/esp-hosted-p4` | ESP-IDF v5.5.3 wifi/getting_started/station with esp_hosted 2.12.13, rev < 3 | see hosted-NOTICE.txt |
 | `p4-hosted-ptable.bin` | 3072 | `examples/esp-hosted-p4` | ESP-IDF v5.5.3 wifi/getting_started/station with esp_hosted 2.12.13, rev < 3 | see hosted-NOTICE.txt |
 | `p4-hosted-station.bin` | 655952 | `examples/esp-hosted-p4` | ESP-IDF v5.5.3 wifi/getting_started/station with esp_hosted 2.12.13, rev < 3 | see hosted-NOTICE.txt |
