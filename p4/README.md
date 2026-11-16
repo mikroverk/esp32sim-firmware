@@ -41,7 +41,7 @@ their texts.
 | `p4-usbmsc.bin` | 428192 | `examples/usb_msc-p4` | ESP-IDF v5.5.3 peripherals/usb/device/tusb_msc on SDMMC, esp_tinyusb 2.4.0, tinyusb 0.21.0~2, rev < 3 | see p4-usbmsc-NOTICE.txt |
 | `p4-scintilla-lcd35-bootloader.bin` | 23072 | joakimeriksson/esp32 `scintilla-p4-lcd35` | ESP-IDF v5.5.4, the project's sdkconfig.defaults and dependencies.lock, rev ≥ 3; its bootloader | see p4-scintilla-NOTICE.txt |
 | `p4-scintilla-lcd35-ptable.bin` | 3072 | joakimeriksson/esp32 `scintilla-p4-lcd35` | ESP-IDF v5.5.4, the project's sdkconfig.defaults and dependencies.lock, rev ≥ 3; its partition table | see p4-scintilla-NOTICE.txt |
-| `p4-scintilla-lcd35.bin` | 1546112 | joakimeriksson/esp32 `scintilla-p4-lcd35` | ESP-IDF v5.5.4, the project's sdkconfig.defaults and dependencies.lock, rev ≥ 3; its app | see p4-scintilla-NOTICE.txt |
+| `p4-scintilla-lcd35.bin` | 1425840 | joakimeriksson/esp32 `scintilla-p4-lcd35` | ESP-IDF v5.5.4, the project's sdkconfig.defaults and dependencies.lock, rev ≥ 3; its app | see p4-scintilla-NOTICE.txt |
 | `c6-hosted-bootloader.bin` | 24192 | `examples/esp-hosted-p4` | esp_hosted 2.12.13 slave example for the ESP32-C6 | see hosted-NOTICE.txt |
 | `c6-hosted-ptable.bin` | 3072 | `examples/esp-hosted-p4` | esp_hosted 2.12.13 slave example for the ESP32-C6 | see hosted-NOTICE.txt |
 | `c6-hosted-otadata.bin` | 8192 | `examples/esp-hosted-p4` | esp_hosted 2.12.13 slave example for the ESP32-C6 | see hosted-NOTICE.txt |
